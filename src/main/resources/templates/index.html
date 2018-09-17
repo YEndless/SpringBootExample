@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css">
+</head>
+<body>
+<h2>学生档案</h2>
+<h4 style="color: gray">软件1611</h4>
+<div class="container"><br/>
+    <div class="row">
+        <div class="col-sm-6 col-md-4" th:each="student:${studentList}">
+            <div class="thumbnail">
+                <!--<img th:src="${student.pic}" th:width="200" th:high="200"/>-->
+                <img th:src="@{'img/'+${student.pic}}" th:width="200" th:high="200"/>
+                <div class="caption alert alert-success" th:align="center">
+                    <h3 th:text="${student.name}"/>
+                    年龄：<h4 style="color: #1130ff" th:text="${student.age}"></h4>
+                         性别：<h4 style="color: #1209ff" th:text="${student.male}"></h4>
+                    学号：<h4 style="color: #1209ff" th:text="${student.studentNo}"></h4>
+                    学校：<h4 style="color: #1209ff" th:text="${student.school}"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

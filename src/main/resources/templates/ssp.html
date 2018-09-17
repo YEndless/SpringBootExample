@@ -1,0 +1,299 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>少数派</title>
+    <link rel="stylesheet" href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css">
+    <style>
+        .avatar{
+            width: 42px;
+            height: 42px;
+        }
+        .bar{
+            background-color: darkcyan;
+        }
+        .sp{
+            background-color: #292525;
+            height: 50px;
+        }
+        .tit{
+            color: white;
+            font-size: 20px;
+        }
+        .sp1{
+            color: white;
+            padding: 380px;
+            font-size: 22px;
+        }
+        .seach{
+            width: 22px;
+            height: 22px;
+        }
+        .tit2{
+            font-size: 18px;
+        }
+        .nav1{
+            width: 90%;
+            height: 40px;
+            margin: 0px auto;
+        }
+        .li{
+            list-style-type: none;
+            display: inline-block;
+            float: left;
+            margin: 5px 10px;
+            list-style: none;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .btn2{
+            background-color: #292525;
+            border-color: white;
+        }
+        .img1{
+            width: 375px;
+            height: 200px;
+        }
+        .img2{
+            width: 225px;
+            height: 140px;
+        }
+        .word{
+           text-align: right;
+        }
+        .actions {
+            float: right;
+        }
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50%;
+        }
+        .like-views {
+            color: #9b9b9b;
+        }
+        .one{
+            position:absolute;
+            width:200px;
+            height:200px;
+            z-indent:2;
+            left:70;
+            top:60;
+            text-align: center ;
+            font-weight: bold;
+            color: white;
+        }
+        .bac{
+            position:relative;
+            width:200px;
+            height:200px;
+            }
+    </style>
+<body>
+<div class="sp">
+    <header>
+        <div class="container ">
+            <header class="sp">
+                <img th:src="@{'img/ssp.png'}">
+                <span class="tit">少数派</span>
+                <span class="sp1">#热门文章</span>
+                <img th:src="@{'img/笔.png'}">
+                <img th:src="@{'img/搜索.png'}" class="seach">
+                <a href="#" class="btn btn-primary btn2">登录</a>
+            </header>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <ul>
+                                <li class="li active">正版软件</li>
+                                <li class="li">付费栏目</li>
+                                <li class="li">Matrix</li>
+                                <li class="li">专栏广场</li>
+                                <li class="li">热门文章</li>
+                                <li class="li">应用推荐</li>
+                                <li class="li">生活方式</li>
+                                <li class="li">新玩意</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+<div class="container">
+    <div class="col-sm-8">
+        <div class="row">
+        <div class="col-sm-8">
+            <div class="col-sm-4">
+                <div class="col-sm-12">
+                    <img src="img/tt1.png" class="img-circle avatar">
+                </div>
+                <div class="col-sm-12">
+                    <h4>huhuhan</h4>
+                    <time class="">5小时前</time>
+                </div>
+            </div>
+            <div class="col-sm-8">
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <h2>一周 App 派评：上周值得关注的 8 款 App</h2>
+            <p>各位好！本周我们为大家挑选了 8 款值得关注的应用，快来看看有哪些你感兴趣的。</p>
+            <div class="actions">
+                    <span>
+                        <img src="img/收藏.png">
+                    <sup>19</sup>
+                        <img src="img/回复2.png">
+                    <sup>11</sup>
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/q1.jpg" class="img2">
+            <hr class="hidden-sm hidden-md hidden-lg">
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="col-sm-4">
+                    <div class="col-sm-12">
+                        <img src="img/tt2.jpg" class="img-circle avatar">
+                    </div>
+                    <div class="col-sm-12">
+                        <h4>少数派编辑部</h4>
+                        <time class="">10小时前</time>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h2>双卡双待 iPhone、全面屏 iPad Pro……本周的苹果发布会都有哪些看点？</h2>
+                <p>本周四凌晨苹果将在 Steve Jobs Theater 举办新品发布会，这次发布会可能会有三款「全面屏」新 iPhone、屏幕更大的 Apple Watch，去掉 Home 键的 iPad Pro 等多款设备亮相，少数派照例为大家带来本次发布会的前瞻，让我们先看看都有哪些产品可能在这次发布会和我们见面。</p>
+                <div class="actions">
+                    <span>
+                        <img src="img/收藏.png">
+                    <sup>19</sup>
+                        <img src="img/回复2.png">
+                    <sup>11</sup>
+                </span>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/q4.jpg" class="img2">
+                <hr class="hidden-sm hidden-md hidden-lg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="col-sm-4">
+                    <div class="col-sm-12">
+                        <img src="img/tt3.jpg" class="img-circle avatar">
+                    </div>
+                    <div class="col-sm-12">
+                        <h4>Tp</h4>
+                        <time class="">1天前</time>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h2>别让「每天 XX 分钟」吓到你，习惯养成其实可以很简单：Continuo | App+1</h2>
+                <p>如果你在养成习惯的过程中也感受到了无形的压力，那么不妨试试这款无需设定目标的 Continuo，帮助你在改变的同时减轻焦虑。</p>
+                <div class="actions">
+                    <span>
+                        <img src="img/收藏.png">
+                    <sup>19</sup>
+                        <img src="img/回复2.png">
+                    <sup>11</sup>
+                </span>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/q2.jpg" class="img2">
+                <hr class="hidden-sm hidden-md hidden-lg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="col-sm-4">
+                    <div class="col-sm-12">
+                        <img src="img/tt4.jpg" class="img-circle avatar">
+                    </div>
+                    <div class="col-sm-12">
+                        <h4>洛世</h4>
+                        <time class="">2天前</time>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h2>简单 3 步，iPhone 也能设置农历生日提醒丨一日一技</h2>
+                <p>我们身边有不少人习惯过农历生日，但是农历日期很难记住。其实 iPhone 自带了农历功能，这篇文章就教你开启隐藏的农历生日提醒。</p>
+                <div class="actions">
+                    <span>
+                        <img src="img/收藏.png">
+                    <sup>19</sup>
+                        <img src="img/回复2.png">
+                    <sup>11</sup>
+                </span>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/q3.png" class="img2">
+                <hr class="hidden-sm hidden-md hidden-lg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="col-sm-4">
+                    <div class="col-sm-12">
+                        <img src="img/tt5.jpg" class="img-circle avatar">
+                    </div>
+                    <div class="col-sm-12">
+                        <h4>nerd_du</h4>
+                        <time class="">9月10日</time>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h2>一派 | 苹果秋季发布会你最期待什么新产品？</h2>
+                <p>这一期的一派，少数派编辑们对下周的苹果秋季发布会谈了谈自己最期待的产品以及购置计划。同时我们也想听听大家的想法。</p>
+                <div class="actions">
+                    <span>
+                        <img src="img/收藏.png">
+                    <sup>19</sup>
+                        <img src="img/回复2.png">
+                    <sup>11</sup>
+                </span>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/q4.png" class="img2">
+                <hr class="hidden-sm hidden-md hidden-lg">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <h3>推荐专题</h3>
+        <div th:each="bar:${barList}">
+                <br>
+            <div class="bac">
+                <img th:src="@{'img/'+${bar.barPic}}" class="img1" >
+                <h4 th:text="${bar.barName}" class="one"></h4>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
